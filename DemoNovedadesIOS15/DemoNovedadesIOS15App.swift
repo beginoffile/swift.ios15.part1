@@ -13,7 +13,8 @@ struct DemoNovedadesIOS15App: App {
         WindowGroup {
 //            ContentView()
 //            AlertaUIView()
-            GroupBoxView()
+//            GroupBoxView()
+            ImagenView()
         }
     }
 }
