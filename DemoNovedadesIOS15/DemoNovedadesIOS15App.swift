@@ -11,7 +11,8 @@ import SwiftUI
 struct DemoNovedadesIOS15App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            AlertaUIView()
         }
     }
 }

@@ -11,6 +11,7 @@
 		05AF037C2B929AB800AF69FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF037B2B929AB800AF69FA /* ContentView.swift */; };
 		05AF037E2B929ABA00AF69FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05AF037D2B929ABA00AF69FA /* Assets.xcassets */; };
 		05AF03812B929ABA00AF69FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05AF03802B929ABA00AF69FA /* Preview Assets.xcassets */; };
+		05AF03882B92A3C100AF69FA /* AlertaUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF03872B92A3C100AF69FA /* AlertaUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		05AF037B2B929AB800AF69FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		05AF037D2B929ABA00AF69FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05AF03802B929ABA00AF69FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		05AF03872B92A3C100AF69FA /* AlertaUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertaUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		05AF03782B929AB800AF69FA /* DemoNovedadesIOS15 */ = {
 			isa = PBXGroup;
 			children = (
+				05AF03872B92A3C100AF69FA /* AlertaUIView.swift */,
 				05AF03792B929AB800AF69FA /* DemoNovedadesIOS15App.swift */,
 				05AF037B2B929AB800AF69FA /* ContentView.swift */,
 				05AF037D2B929ABA00AF69FA /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			files = (
 				05AF037C2B929AB800AF69FA /* ContentView.swift in Sources */,
 				05AF037A2B929AB800AF69FA /* DemoNovedadesIOS15App.swift in Sources */,
+				05AF03882B92A3C100AF69FA /* AlertaUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
