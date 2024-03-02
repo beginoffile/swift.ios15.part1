@@ -19,7 +19,7 @@ struct AsyncAWaitView: View {
     @State private var datos = [
     Datos(id: 0, name: "Jorge", username: "George")
     ]
-    
+    @StateObject private var datosModelo = RecargarModelView()
     /*
     func fetch(){
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else {return}
@@ -37,7 +37,7 @@ struct AsyncAWaitView: View {
         }.resume()
     }
     */
-
+/*
     func recargar() async{
         do{
             guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else {return}
@@ -47,11 +47,11 @@ struct AsyncAWaitView: View {
             print("error", error.localizedDescription)
         }
     }
-    
+  */
     
     var body: some View {
         NavigationView{
-            List(datos){item in
+            List(datosModelo.datosModelo){item in
                 VStack(alignment: .leading){
                     Text(item.name).font(.headline)
                     Text(item.username).font(.subheadline)
@@ -62,7 +62,10 @@ struct AsyncAWaitView: View {
 //                    await recargar()
 //                }
                 .refreshable {
-                    await recargar()
+                    await datosModelo.fetch()
+                }
+                .task{
+                    await datosModelo.fetch()
                 }
         }
     }

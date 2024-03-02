@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05A9C44F2B92D11F00B42EA5 /* AsyncAWaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A9C44E2B92D11F00B42EA5 /* AsyncAWaitView.swift */; };
+		05A9C4512B92DC8700B42EA5 /* RecargarModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A9C4502B92DC8700B42EA5 /* RecargarModelView.swift */; };
 		05AF037A2B929AB800AF69FA /* DemoNovedadesIOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF03792B929AB800AF69FA /* DemoNovedadesIOS15App.swift */; };
 		05AF037C2B929AB800AF69FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF037B2B929AB800AF69FA /* ContentView.swift */; };
 		05AF037E2B929ABA00AF69FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05AF037D2B929ABA00AF69FA /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		05A9C44E2B92D11F00B42EA5 /* AsyncAWaitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAWaitView.swift; sourceTree = "<group>"; };
+		05A9C4502B92DC8700B42EA5 /* RecargarModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecargarModelView.swift; sourceTree = "<group>"; };
 		05AF03762B929AB800AF69FA /* DemoNovedadesIOS15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoNovedadesIOS15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05AF03792B929AB800AF69FA /* DemoNovedadesIOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoNovedadesIOS15App.swift; sourceTree = "<group>"; };
 		05AF037B2B929AB800AF69FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				05BB4FF82B92AF1F00E2C2E7 /* TareaModificadoraView.swift */,
 				05BB4FFA2B92B0E100E2C2E7 /* RefreshView.swift */,
 				05A9C44E2B92D11F00B42EA5 /* AsyncAWaitView.swift */,
+				05A9C4502B92DC8700B42EA5 /* RecargarModelView.swift */,
 			);
 			path = DemoNovedadesIOS15;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				05AF037A2B929AB800AF69FA /* DemoNovedadesIOS15App.swift in Sources */,
 				05AF038A2B92A6FC00AF69FA /* GroupBoxView.swift in Sources */,
 				05BB4FF92B92AF2000E2C2E7 /* TareaModificadoraView.swift in Sources */,
+				05A9C4512B92DC8700B42EA5 /* RecargarModelView.swift in Sources */,
 				05A9C44F2B92D11F00B42EA5 /* AsyncAWaitView.swift in Sources */,
 				05AF03882B92A3C100AF69FA /* AlertaUIView.swift in Sources */,
 				05BB4FFB2B92B0E100E2C2E7 /* RefreshView.swift in Sources */,
