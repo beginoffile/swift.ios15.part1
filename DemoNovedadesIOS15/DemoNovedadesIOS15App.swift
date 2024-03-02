@@ -12,7 +12,8 @@ struct DemoNovedadesIOS15App: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            AlertaUIView()
+//            AlertaUIView()
+            GroupBoxView()
         }
     }
 }
