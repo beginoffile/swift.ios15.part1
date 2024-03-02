@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct RefreshView: View {
+
+    @State private var ite = "Item"
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            List(1..<10){item in
+                Text("\(ite) \(item)")
+            }
+            .navigationTitle("Lista")
+            .refreshable {
+//                print("Recargando api")
+                ite = "Ejecutar el refresh"
+            }
+        }
     }
 }
 

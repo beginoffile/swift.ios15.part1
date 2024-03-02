@@ -16,7 +16,9 @@ struct DemoNovedadesIOS15App: App {
 //            GroupBoxView()
 //            ImagenView()
 //            BotonesView()
-            TareaModificadoraView()
+//            TareaModificadoraView()
+//            RefreshView()
+            AsyncAWaitView()
         }
     }
 }
