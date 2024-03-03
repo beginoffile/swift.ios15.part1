@@ -20,6 +20,7 @@ struct AsyncAWaitView: View {
     Datos(id: 0, name: "Jorge", username: "George")
     ]
     @StateObject private var datosModelo = RecargarModelView()
+    @State private var buscador  = ""
     /*
     func fetch(){
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else {return}
@@ -51,7 +52,7 @@ struct AsyncAWaitView: View {
     
     var body: some View {
         NavigationView{
-            List(datosModelo.datosModelo){item in
+            List(datosModelo.datosModelo.filter{ buscador.isEmpty ? true : $0.name.contains(buscador)}){item in
                 VStack(alignment: .leading){
                     Text(item.name).font(.headline)
                     Text(item.username).font(.subheadline)
@@ -67,6 +68,7 @@ struct AsyncAWaitView: View {
                 .task{
                     await datosModelo.fetch()
                 }
+                .searchable(text: $buscador)
         }
     }
 }
