@@ -52,23 +52,41 @@ struct AsyncAWaitView: View {
     
     var body: some View {
         NavigationView{
-            List(datosModelo.datosModelo.filter{ buscador.isEmpty ? true : $0.name.contains(buscador)}){item in
-                VStack(alignment: .leading){
-                    Text(item.name).font(.headline)
-                    Text(item.username).font(.subheadline)
-                    
+            List{
+                ForEach(datosModelo.datosModelo.filter{ buscador.isEmpty ? true : $0.name.contains(buscador)}){item in
+                    VStack(alignment: .leading){
+                        Text(item.name).font(.headline)
+                        Text(item.username).font(.subheadline)
+                        
+                    }.swipeActions{
+                        
+                        Button("Aceptar"){
+                            print("Aceptar")
+                        }.tint(.blue)
+                        
+                        Button(action: {
+                            print("Eliminar")
+                        }, label: {
+                            Label("Eliminar", systemImage: "trash.fill")
+                        }).tint(.red)
+                        
+                    }
                 }
-            }.navigationTitle("Lista")
-//                .task {
-//                    await recargar()
-//                }
-                .refreshable {
-                    await datosModelo.fetch()
-                }
-                .task{
-                    await datosModelo.fetch()
-                }
-                .searchable(text: $buscador)
+            }
+            
+            .navigationTitle("Lista")
+            //                .task {
+            //                    await recargar()
+            //                }
+            .refreshable {
+                await datosModelo.fetch()
+            }
+            .task{
+                await datosModelo.fetch()
+            }
+            .searchable(text: $buscador)
+
+            
         }
     }
 }
@@ -76,3 +94,5 @@ struct AsyncAWaitView: View {
 #Preview {
     AsyncAWaitView()
 }
+
+
